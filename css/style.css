@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background: url("../img/eric-dsk-7JWWKE7i4qo-unsplash.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    background-image: url(../img/bg.jpg);
+    /* background: linear-gradient(rgb(56, 56, 56), rgb(3, 66, 95)); */
+    width: 122vmin;
+    height: 92vmin;
+    border:  9px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 100px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darksalmon;
+}
+#hiscoreBox{
+    position: absolute;
+    top: 9px;
+    left: 70px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gold;
+}
+.head{
+    background-image: url(../img/head1.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid purple;
+    transform: scale(1.02);
+    border-radius: 32px;
+    box-shadow: 1px 3px 1px rgb(177, 173, 173);
+    /* background-color: red; */
+}
+.snake{
+    background-image: url(../img/snake\ skin.jpg);
+    background-size: cover;
+    /* background-color: purple; */
+    border: .25vmin solid rgb(165, 29, 255);
+    border-radius: 32px;
+    box-shadow: 1px 8px 3px rgb(20, 20, 20);
+}
+.food{
+    background: linear-gradient(rgb(255, 0, 0) , rgba(247, 21, 21, 0.877));
+    background-position: center;
+    border: .25vmin solid rgb(15, 252, 7);
+    border-radius: 39px;
+    box-shadow: 1px 8px 3px rgb(20, 20, 20);
+}
